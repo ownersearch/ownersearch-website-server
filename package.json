@@ -1,0 +1,26 @@
+{
+  "name": "stemn-website-server",
+  "version": "0.0.0",
+  "description": "Stemn website server",
+  "main": "src/index.js",
+  "scripts": {
+    "watch": "BLUEBIRD_DEBUG=1 nodemon -L -w package.json -w /app/src src",
+    "start": "GCLOUD_PROJECT=stemnapp node src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stemn/stemn-website-server.git"
+  },
+  "author": "Jackson Delahunt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stemn/stemn-website-server/issues"
+  },
+  "homepage": "https://github.com/stemn/stemn-website-server#readme",
+  "devDependencies": {
+    "version-bump-prompt": "^3.1.2"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
