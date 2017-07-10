@@ -1,11 +1,12 @@
 {
   "name": "stemn-website-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Stemn website server",
   "main": "src/index.js",
   "scripts": {
     "watch": "BLUEBIRD_DEBUG=1 nodemon -L -w package.json -w /app/src src",
-    "start": "GCLOUD_PROJECT=stemnapp node src"
+    "start": "GCLOUD_PROJECT=stemnapp node src",
+    "release": "bump --tag --push --all"
   },
   "repository": {
     "type": "git",
