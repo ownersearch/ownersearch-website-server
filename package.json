@@ -4,7 +4,7 @@
   "description": "Stemn website server",
   "main": "src/index.js",
   "scripts": {
-    "watch": "BLUEBIRD_DEBUG=1 nodemon -L -w package.json -w /app/src src",
+    "watch": "BLUEBIRD_DEBUG=1 nodemon -L -w package.json -w src src",
     "start": "GCLOUD_PROJECT=stemnapp node src",
     "release": "bump --tag --push --all"
   },
