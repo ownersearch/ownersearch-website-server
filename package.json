@@ -1,6 +1,6 @@
 {
   "name": "stemn-website-server",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Stemn website server",
   "main": "src/index.js",
   "scripts": {
