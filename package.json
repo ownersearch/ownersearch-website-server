@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "watch": "BLUEBIRD_DEBUG=1 nodemon -L -w package.json -w src src",
-    "start": "GCLOUD_PROJECT=stemnapp node src",
+    "start": "GCLOUD_PROJECT=ownersearch node src",
     "release": "bump --tag --push --all"
   },
   "repository": {

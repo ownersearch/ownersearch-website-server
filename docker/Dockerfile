@@ -1,8 +1,6 @@
-FROM gcr.io/stemnapp/alpine-nodejs
+FROM mhart/alpine-node
 
-ADD docker/root/etc /etc
-
-EXPOSE 3080
+RUN apk add --update git
 
 WORKDIR /app
 
@@ -14,4 +12,6 @@ ADD src src
 # no ssl certificates for accessing https github so bypass for now
 RUN git config --system http.sslverify false
 
-RUN git clone https://github.com/stemn/stemn-website-live.git --depth 1 website
+RUN git clone https://github.com/ownersearch/ownersearch-website-live.git --depth 1 website
+
+ENTRYPOINT npm run start

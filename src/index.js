@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 
 const app = express();
-const root = '/app/website/client';
+const root = '/app/website/dist';
 
 app.use(morgan('dev'));
 
