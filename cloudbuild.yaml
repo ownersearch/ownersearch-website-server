@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/alpine-website:latest', '-t', 'gcr.io/$PROJECT_ID/alpine-website:$TAG_NAME', '-f', 'Dockerfile', '..']
+  args: ['build', '-t', 'gcr.io/ownersearch-176101/website-server:latest', '-t', 'gcr.io/ownersearch-176101/website-server:$TAG_NAME', '-f', 'Dockerfile', '..']
   dir: 'docker'
 
-images: ['gcr.io/$PROJECT_ID/alpine-website:latest', 'gcr.io/$PROJECT_ID/alpine-website:$TAG_NAME']
+images: ['gcr.io/ownersearch-176101/website-server:latest', 'gcr.io/ownersearch-176101/website-server:$TAG_NAME']
